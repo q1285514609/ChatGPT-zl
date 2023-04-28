@@ -121,9 +121,9 @@ export function SideBar(props: { className?: string }) {
                 marginBottom: "20px",
                 lineHeight: "1.5"
             }}>
-                账号小站成品账号低至5.5元，免去无法注册的烦恼<br />
-                正版plus低至100元，省事省心省钱<br />
-                plus搭载GPT4.0模型，提高工作效率
+                若机器人回答错误,在设置中填写自己apikey即可正常使用<br />
+                如无apikey可到v2li.top中购买成品apikey或账号<br />
+                独享账号低至4.5元起，免去无法注册的烦恼
             </div>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
