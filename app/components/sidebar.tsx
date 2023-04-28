@@ -96,9 +96,36 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>
+            <a href="https://v2li.top/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <div style={{
+                    fontSize: "24px",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    backgroundColor: "#1B262A",
+                    color: "#FFA726",
+                    padding: "10px",
+                    borderRadius: "5px",
+                    marginBottom: "20px",
+                    cursor: "pointer"
+                }}>
+                    v2li.top - 购买ChatGPT成品号
+                </div>
+            </a>
+
+        </div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+            <div style={{
+                fontSize: "16px",
+                color: "#FFA726",
+                marginBottom: "20px",
+                lineHeight: "1.5"
+            }}>
+                国内直连的ChatGPT Web,内置apikey,可直接使用<br />
+                账号小站成品账号低至5.5元起,让你免去无法注册的烦恼<br />
+                账号小站正版plus低至100元起,让你省事省心省钱<br />
+                plus可使用GPT4.0模型提高工作效率的不二之选
+            </div>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -146,11 +173,11 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
-            </a>
-          </div>
+          {/*<div className={styles["sidebar-action"]}>*/}
+          {/*  <a href={REPO_URL} target="_blank">*/}
+          {/*    <IconButton icon={<GithubIcon />} shadow />*/}
+          {/*  </a>*/}
+          {/*</div>*/}
         </div>
         <div>
           <IconButton
