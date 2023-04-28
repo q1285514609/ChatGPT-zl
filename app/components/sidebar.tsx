@@ -121,10 +121,9 @@ export function SideBar(props: { className?: string }) {
                 marginBottom: "20px",
                 lineHeight: "1.5"
             }}>
-                国内直连的ChatGPT Web,内置apikey,可直接使用<br />
-                账号小站成品账号低至5.5元起,让你免去无法注册的烦恼<br />
-                账号小站正版plus低至100元起,让你省事省心省钱<br />
-                plus可使用GPT4.0模型提高工作效率的不二之选
+                账号小站成品账号低至5.5元，免去无法注册的烦恼<br />
+                正版plus低至100元，省事省心省钱<br />
+                plus搭载GPT4.0模型，提高工作效率
             </div>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
