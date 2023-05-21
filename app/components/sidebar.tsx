@@ -97,34 +97,58 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>
-            <a href="https://v2li.top/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                <div style={{
-                    fontSize: "24px",
-                    fontWeight: "bold",
-                    textAlign: "center",
-                    backgroundColor: "#1B262A",
-                    color: "#FFA726",
-                    padding: "10px",
-                    borderRadius: "5px",
-                    marginBottom: "20px",
-                    cursor: "pointer"
-                }}>
-                    v2li.top - 购买ChatGPT成品号
-                </div>
-            </a>
-
+          <a
+            href="https://v2li.top/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div
+              style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                textAlign: "center",
+                backgroundColor: "#1B262A",
+                color: "#FFA726",
+                padding: "10px",
+                borderRadius: "5px",
+                marginBottom: "20px",
+                cursor: "pointer",
+              }}
+            >
+              v2li.top - 点击购买ChatGPT账号
+            </div>
+          </a>
         </div>
         <div className={styles["sidebar-sub-title"]}>
-            <div style={{
-                fontSize: "16px",
-                color: "#FFA726",
-                marginBottom: "20px",
-                lineHeight: "1.5"
-            }}>
-                若机器人回答错误,在设置中填写自己apikey即可正常使用<br />
-                如无apikey可到v2li.top中购买成品apikey或账号<br />
-                独享账号低至4.5元起，免去无法注册的烦恼
+          <div
+            style={{
+              fontSize: "16px",
+              color: "#800080",
+              marginBottom: "20px",
+              lineHeight: "1.5",
+            }}
+          >
+            若AI回答错误了,在设置中填写自己apikey即可正常使用
+            <br />
+            <br />
+            如无apikey可到v2li.top中购买成品apikey或成品账号
+            <br />
+            <br />
+            独享账号低至5.9元起，免去无法注册的烦恼
+            <br />
+            <br />
+            <div>
+              <a
+                href="https://linyunzhushou.lanzoum.com/iVqfi0wnn1ni"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                点击下载window桌面软件版
+              </a>
             </div>
+          </div>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -139,13 +163,13 @@ export function SideBar(props: { className?: string }) {
           onClick={() => navigate(Path.NewChat, { state: { fromHome: true } })}
           shadow
         />
-        <IconButton
-          icon={<PluginIcon />}
-          text={shouldNarrow ? undefined : Locale.Plugin.Name}
-          className={styles["sidebar-bar-button"]}
-          onClick={() => showToast(Locale.WIP)}
-          shadow
-        />
+        {/*<IconButton*/}
+        {/*  icon={<PluginIcon />}*/}
+        {/*  text={shouldNarrow ? undefined : Locale.Plugin.Name}*/}
+        {/*  className={styles["sidebar-bar-button"]}*/}
+        {/*  onClick={() => showToast(Locale.WIP)}*/}
+        {/*  shadow*/}
+        {/*/>*/}
       </div>
 
       <div
