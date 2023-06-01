@@ -135,7 +135,7 @@ export function SideBar(props: { className?: string }) {
             如无apikey可到v2li.top中购买成品apikey或成品账号
             <br />
             <br />
-            独享账号低至5.9元起，免去无法注册的烦恼
+            独享账号低至2元起，免去无法注册的烦恼
             <br />
             <br />
             <div>
