@@ -77,7 +77,7 @@ export const ALL_MODELS = [
     available: ENABLE_GPT4,
   },
   {
-    name: "gpt-3.5-turbo-0613",
+    name: "gpt-3.5-turbo",
     available: true,
   },
   {
@@ -122,7 +122,7 @@ export function limitNumber(
   max: number,
   defaultValue: number,
 ) {
-  if (typeof x !== "number" || isNaN(x)) {
+  if (isNaN(x)) {
     return defaultValue;
   }
 
